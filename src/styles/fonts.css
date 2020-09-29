@@ -1,0 +1,71 @@
+@font-face {
+	font-family: 'Open Sans';
+	src: 
+		url('./fonts/opensans/opensans-regular.woff') format('woff'),
+		url('./fonts/opensans/opensans-regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: 
+		url('./fonts/opensans/opensans-bold.woff') format('woff'),
+		url('./fonts/opensans/opensans-bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: 
+		url('./fonts/opensans/opensans-italic.woff') format('woff'),
+		url('./fonts/opensans/opensans-italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: 
+		url('./fonts/opensans/opensans-bolditalic.woff') format('woff'),
+		url('./fonts/opensans/opensans-bolditalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Spectral';
+	src: 
+		url('./fonts/spectral/SpectralSC-Regular.woff') format('woff'),
+		url('./fonts/spectral/SpectralSC-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Spectral';
+	src: 
+		url('./fonts/spectral/SpectralSC-Bold.woff') format('woff'),
+		url('./fonts/spectral/SpectralSC-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Spectral';
+	src: 
+		url('./fonts/spectral/SpectralSC-Italic.woff') format('woff'),
+		url('./fonts/spectral/SpectralSC-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Spectral';
+	src: 
+		url('./fonts/spectral/SpectralSC-BoldItalic.woff') format('woff'),
+		url('./fonts/spectral/SpectralSC-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
