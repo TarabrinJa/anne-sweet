@@ -16,7 +16,7 @@
 			<nav class="header-nav">
 				<ul>
 					<li><a href="./index.html"><img src="./img/interface/logo.png"></a></li>
-					<li><a href="./blog.html">Статьи</a></li>
+					<li><a>Статьи</a></li>
 					<li><a href="./index.html">Обо мне</a></li>
 					<li><a href="./index.html">Портфолио</a></li>
 					<li><a href="./index.html">Написать мне</a></li>
@@ -58,7 +58,6 @@
 					</footer>
 				</div>
 			</article>
-			
 
 			<section class="comments">
 				<div class="comments-container">
@@ -76,13 +75,14 @@
 							<p class="comments-comment">Основательный материал! Можешь посоветовать какие-то книги на эту тему?</p>
 						</li>
 					</ul>
+
 					<div class="comments-form-layer">
 						<header class="comments-form-header">Оставить комментарий</header>
-						<form class="comments-form" action="">
-							<input class="comments-form-name-field" type="text" placeholder="Имя">
-							<input class="comments-form-email-field" type="email" placeholder="Почта">
-							<input class="comments-form-submit-btn" type="submit">
-							<textarea class="comments-form-comment">Написать комментарий...</textarea>
+						<form class="comments-form form" action="">
+							<input class="comments-form-name-field" type="text" placeholder="Имя" required>
+							<input class="comments-form-email-field" type="email" placeholder="Почта" required>
+							<input class="comments-form-submit-btn submit-btn" type="submit">
+							<textarea class="comments-form-comment textarea" placeholder="Написать комментарий..."></textarea>
 						</form>
 					</div>
 				</div>
@@ -95,5 +95,6 @@
 		<a href="#">Инстаграм</a>
 		<a href="#">Твиттер</a>
 	</footer>
+	<script src="./scripts/comments.js"></script>
 </body>
 </html>

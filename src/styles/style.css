@@ -132,12 +132,24 @@ body {
 }
 
 .select-theme {
-	margin-top: 84px;
+	margin-top: 82px;
+	position: relative;
+}
+
+.select-theme::after {
+	content: "";
+	position: absolute;
+	background-image: url('../img/interface/triangle.svg');
+	width: 16px;
+	height: 14px;
+	left: 165px;
+	top: 19px;
 }
 
 .select-theme select {
-	padding: 11px 74px 11px 22px ;
-	font-family: Open Sans;
+	position: relative;
+	padding: 12px 78px 12px 22px ;
+	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: normal;
 	font-size: 16px;
@@ -170,6 +182,10 @@ body {
 
 .article-card img {
 	border-radius: 10px;
+}
+
+.article-card--large a {
+	color: #fff;
 }
 
 .article-caption-footer {
@@ -587,4 +603,8 @@ body {
 	padding-bottom: 13px;
 	background-color: #fff;
 	border-width: 1px;
+}
+
+.warning {
+	color: crimson;
 }

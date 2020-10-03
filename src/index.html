@@ -16,10 +16,10 @@
 			<nav class="header-nav">
 				<ul>
 					<li><img src="./img/interface/logo.png"></li>
-					<li><a href="./blog.html">Статьи</a></li>
-					<li><a href="#">Обо мне</a></li>
-					<li><a href="#">Портфолио</a></li>
-					<li><a href="#">Написать мне</a></li>
+					<li><a href="#all-articles">Статьи</a></li>
+					<li><a href="#about">Обо мне</a></li>
+					<li><a href="#portfolio">Портфолио</a></li>
+					<li><a href="#write">Написать мне</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -29,10 +29,15 @@
 		<div class="container">
 			<section class="all-articles">
 				<header>
-					<h2>Все статьи</h2>
+					<h2 id="all-articles">Все статьи</h2>
 					<div class="select-theme">
 						<select name="">
-							<option value="">Выбрать тему</option>
+							<option value="">Путешествия</option>
+							<option value="">Город</option>
+							<option value="">Книги</option>
+							<option value="">Фотографии</option>
+							<option value="">Рецепты</option>
+							<option value="">Все статьи</option>
 						</select>
 					</div>
 				</header>
@@ -40,7 +45,7 @@
 					<div class="article-card">
 						<img src="./img/content/article-berlin.jpg" alt="Берлин">
 						<div class="article-caption">
-							<h3 class="article-header">Путешествие в Берлин в августе</h3>
+							<a href="./blog.html"><h3 class="article-header">Путешествие в Берлин в августе</h3></a>
 							<p class="article-lead">Летний месяц я провела в столице Германии вместе с друзьями. И вот как это было!</p>
 							<div class="article-caption-footer">
 								<span class="article-tags">Теги: путешествия</span>
@@ -51,7 +56,7 @@
 					<div class="article-card">
 						<img src="./img/content/article-coldbrew.jpg" alt="Колдбрю">
 						<div class="article-caption">
-							<h3 class="article-header">Где выпить колдбрю в Москве</h3>
+							<a href="./blog.html"><h3 class="article-header">Где выпить колдбрю в Москве</h3></a>
 							<p class="article-lead">Собрала для вас список любимых кофеен, <br> где подают лучший летний напиток.</p>
 							<div class="article-caption-footer">
 								<span class="article-tags">Теги: город</span>
@@ -62,7 +67,7 @@
 					<div class="article-card">
 						<img src="./img/content/article-books.jpg" alt="Книги">
 						<div class="article-caption">
-							<h3 class="article-header">Прочитано: книжные рекомендации</h3>
+							<a href="./blog.html"><h3 class="article-header">Прочитано: книжные рекомендации</h3></a>
 							<p class="article-lead">Рассказываю о прочитанных за последнее время книгах: фавориты и провалы.</p>
 							<div class="article-caption-footer">
 								<span class="article-tags">Теги: книги</span>
@@ -73,7 +78,7 @@
 					<div class="article-card article-card--large">
 						<img src="./img/content/article-pictures.jpg" alt="Розы">
 						<div class="article-caption article-caption--large">
-							<h3 class="article-header">Снимки на пленку</h3>
+							<a href="./blog.html"><h3 class="article-header">Снимки на пленку</h3></a>
 							<p class="article-lead">Поделилась с вами весенними фотографиями, <br> и секретами удачных снимков.</p>
 							<div class="article-caption-footer">
 								<span class="article-tags">Теги: фотографии</span>
@@ -84,7 +89,7 @@
 					<div class="article-card article-card--large">
 						<img src="./img/content/article-cheesecake.jpg" alt="Чизкейк">
 						<div class="article-caption article-caption--large">
-							<h3 class="article-header">Домашний чизкейк</h3>
+							<a href="./blog.html"><h3 class="article-header">Домашний чизкейк</h3></a>
 							<p class="article-lead">Что может быть лучше чизкейка с сезонными ягодами? Только домашний чизкейк!</p>
 							<div class="article-caption-footer">
 								<span class="article-tags">Теги: рецепты</span>
@@ -101,7 +106,7 @@
 			</section>
 
 			<section class="about">
-				<h2 class="about-header header-center">Обо мне</h2>
+				<h2 class="about-header header-center" id="about">Обо мне</h2>
 				<div class="about-body">
 					<img class="about-img" src="./img/content/profile-photo.jpg" alt="Аня">
 					<div class="about-text">
@@ -117,7 +122,7 @@
 			</section>
 
 			<section class="portfolio">
-				<h2 class="prtfolio-header header-center">Портфолио</h2>
+				<h2 class="prtfolio-header header-center" id="portfolio">Портфолио</h2>
 				<div class="portfolio-cards-container">
 					<div class="portfolio-card card-1">
 						<h3>Блог HTML Academy</h3>
@@ -144,21 +149,21 @@
 			</section>
 
 			<section class="write">
-				<h2 class="write-header header-center">Написать мне</h2>
-				<form class="write-form" action="">
+				<h2 class="write-header header-center" id="write">Написать мне</h2>
+				<form class="write-form form" action="">
 					<label>
 						<h4>Ваше имя</h4>
-						<input type="text" placeholder="Иван Иванов">
+						<input type="text" placeholder="Иван Иванов" required>
 					</label>
 					<label>
 						<h4>Email</h4>
-						<input type="email" placeholder="google@gmail.com">
+						<input type="email" placeholder="google@gmail.com" required>
 					</label>
 					<label>
 						<h4>Сообщение</h4>
-						<textarea placeholder="Напишите здесь ваше сообщение."></textarea>
+						<textarea class="textarea" placeholder="Напишите здесь ваше сообщение."></textarea>
 					</label>
-					<input type="submit">
+					<input class="submit-btn" type="submit">
 				</form>
 			</section>
 		</div>
@@ -169,5 +174,6 @@
 		<a href="#">Инстаграм</a>
 		<a href="#">Твиттер</a>
 	</footer>
+	<script src="./scripts/comments.js"></script>
 </body>
 </html>
