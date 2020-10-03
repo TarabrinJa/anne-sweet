@@ -364,6 +364,10 @@ body {
 	margin-right: 0;
 }
 
+.page-article {
+	margin-bottom: 65px;
+}
+
 .page-article__h {
 	margin-bottom: 6px;
 }
@@ -399,14 +403,14 @@ body {
 	padding-top: 3px;
 }
 
-.page-article__footer {
+.footer-buttons {
 	display: flex;
 	justify-content: flex-end;
 	padding-top: 15px;
 }
 
-.page-article__footer button,
-.page-article__footer a {
+.footer-buttons button,
+.footer-buttons a {
 	min-height: 50px;
 	min-width: 50px;
 	background-repeat: no-repeat;
@@ -441,4 +445,146 @@ body {
 
 .vkontakte-btn {
 	background-image: url(../img/interface/button-vkontakte.svg);
+}
+
+.footer-to-all-articles {
+	display: block;
+	position: relative;
+	margin-top: 36px;
+	padding-left: 2px;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 49px;
+}
+
+.footer-to-all-articles::after {
+	position: absolute;
+	width: 64px;
+	height: 15px;
+	background-image: url(../img/interface/arrow.svg);
+	background-repeat: no-repeat;
+	content: "";
+	left: 340px;
+	bottom: 15px;
+}
+
+.comments-container {
+	max-width: 793px;
+}
+
+.comments-list {
+	display: flex;
+	flex-direction: column;
+	min-width: 793px;
+	min-height: 347px;
+	background-color: #ECE1E1;
+	border-radius: 10px;
+	padding-top: 82px;
+}
+
+.comments-item {
+	margin-left: 102px;
+	margin-bottom: 15px;
+}
+
+.comments-sender {
+	font-weight: bold;
+	position: relative;
+	padding-left: 63px;
+}
+
+.comments-comment {
+	margin-top: 24px;
+}
+
+.comments-item:nth-child(1) .comments-sender::before {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/content/ava-1.png);
+	background-repeat: no-repeat;
+	content: "";
+	left: 0px;
+	top: -12px;
+}
+
+.comments-item:nth-child(2) .comments-sender::before {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/content/ava-2.png);
+	background-repeat: no-repeat;
+	content: "";
+	left: 0px;
+	top: -12px;
+}
+
+.comments-item:nth-child(3) .comments-sender::before {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	background-image: url(../img/content/ava-3.png);
+	background-repeat: no-repeat;
+	content: "";
+	left: 0px;
+	top: -12px;
+}
+
+.comments-form-layer {
+	min-height: 311px;
+	margin-left: 82px;
+}
+
+.comments-form-header {
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 33px;
+	margin-top: 77px;
+}
+
+.comments-form {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	padding-top: 70px;
+	max-height: 208px;
+}
+
+.comments-form-comment {
+	resize: none;
+	box-sizing: border-box;
+	border-radius: 10px;
+	margin-left: 81px;
+	min-height: 207px;
+	min-width: 406px;
+	padding-top: 18px;
+	padding-left: 20px;
+}
+
+.comments-form-name-field,
+.comments-form-email-field {
+	box-sizing: border-box;
+	min-width: 221px;
+	border: none;
+	padding-left: 0;
+	border-bottom: 1px solid #2E2F22;
+	padding-bottom: 16px;
+}
+
+.comments-form-email-field {
+	margin-top: 36px;
+}
+
+.comments-form-submit-btn {
+	margin-top: 53px;
+}
+
+.comments-form-submit-btn {
+	border-radius: 10px;
+	min-width: 224px;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	background-color: #fff;
+	border-width: 1px;
 }
