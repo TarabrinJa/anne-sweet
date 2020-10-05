@@ -31,18 +31,18 @@
 				<header>
 					<h2 id="all-articles">Все статьи</h2>
 					<div class="select-theme">
-						<select name="">
-							<option value="">Путешествия</option>
-							<option value="">Город</option>
-							<option value="">Книги</option>
-							<option value="">Фотографии</option>
-							<option value="">Рецепты</option>
-							<option value="">Все статьи</option>
+						<select class="filter" name="">
+							<option value="travels">Путешествия</option>
+							<option value="city">Город</option>
+							<option value="books">Книги</option>
+							<option value="photos">Фотографии</option>
+							<option value="recipes">Рецепты</option>
+							<option value="all" selected>Все статьи</option>
 						</select>
 					</div>
 				</header>
 				<div class="articles">
-					<div class="article-card">
+					<div class="article-card" data-category="travels">
 						<img src="./img/content/article-berlin.jpg" alt="Берлин">
 						<div class="article-caption">
 							<a href="./blog.html"><h3 class="article-header">Путешествие в Берлин в августе</h3></a>
@@ -53,7 +53,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="article-card">
+					<div class="article-card" data-category="city">
 						<img src="./img/content/article-coldbrew.jpg" alt="Колдбрю">
 						<div class="article-caption">
 							<a href="./blog.html"><h3 class="article-header">Где выпить колдбрю в Москве</h3></a>
@@ -64,7 +64,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="article-card">
+					<div class="article-card" data-category="books">
 						<img src="./img/content/article-books.jpg" alt="Книги">
 						<div class="article-caption">
 							<a href="./blog.html"><h3 class="article-header">Прочитано: книжные рекомендации</h3></a>
@@ -75,7 +75,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="article-card article-card--large">
+					<div class="article-card article-card--large" data-category="photos">
 						<img src="./img/content/article-pictures.jpg" alt="Розы">
 						<div class="article-caption article-caption--large">
 							<a href="./blog.html"><h3 class="article-header">Снимки на пленку</h3></a>
@@ -86,7 +86,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="article-card article-card--large">
+					<div class="article-card article-card--large" data-category="recipes">
 						<img src="./img/content/article-cheesecake.jpg" alt="Чизкейк">
 						<div class="article-caption article-caption--large">
 							<a href="./blog.html"><h3 class="article-header">Домашний чизкейк</h3></a>
@@ -174,6 +174,7 @@
 		<a href="#">Инстаграм</a>
 		<a href="#">Твиттер</a>
 	</footer>
-	<script src="./scripts/comments.js"></script>
+	<script src="./scripts/is-message-valid.js"></script>
+	<script src="./scripts/filter.js"></script>
 </body>
 </html>

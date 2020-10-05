@@ -6,6 +6,10 @@ ul {
 	list-style: none;
 }
 
+.hidden {
+	display: none;
+}
+
 /* elements styles */
 
 .header-center {
@@ -173,6 +177,10 @@ body {
 
 .article-card {
 	max-width: 387px;
+}
+
+.article-card.highlight {
+	outline: 6px solid #ff9900;
 }
 
 .article-card--large {
@@ -503,17 +511,17 @@ body {
 	margin-bottom: 15px;
 }
 
-.comments-sender {
+.author {
 	font-weight: bold;
 	position: relative;
 	padding-left: 63px;
 }
 
-.comments-comment {
+.comment {
 	margin-top: 24px;
 }
 
-.comments-item:nth-child(1) .comments-sender::before {
+.author-3::before {
 	position: absolute;
 	width: 50px;
 	height: 50px;
@@ -524,7 +532,7 @@ body {
 	top: -12px;
 }
 
-.comments-item:nth-child(2) .comments-sender::before {
+.author-2::before {
 	position: absolute;
 	width: 50px;
 	height: 50px;
@@ -535,7 +543,7 @@ body {
 	top: -12px;
 }
 
-.comments-item:nth-child(3) .comments-sender::before {
+.author-1::before {
 	position: absolute;
 	width: 50px;
 	height: 50px;
