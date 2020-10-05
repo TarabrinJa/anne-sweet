@@ -440,8 +440,12 @@ body {
 	background-repeat: no-repeat;
 }
 
-.likes-button {
+.likes-button-lay {
 	flex-grow: 1;
+}
+
+.likes-button {
+	cursor: pointer;
 	border: none;
 	background-color: transparent;
 	background-image: url(../img/interface/button-like.svg);
